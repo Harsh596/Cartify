@@ -1,12 +1,83 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="light">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>my-react-app</title>
+    <title>Cartify</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Spline+Sans:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "on-secondary": "#ffeff1",
+                        "on-primary": "#fff2ce",
+                        "tertiary-fixed-dim": "#00d4ec",
+                        "on-secondary-container": "#900042",
+                        "on-surface-variant": "#595c5d",
+                        "on-primary-fixed-variant": "#645300",
+                        "tertiary-fixed": "#00e3fd",
+                        "on-background": "#2c2f30",
+                        "secondary-fixed": "#ffc1ce",
+                        "tertiary-dim": "#005863",
+                        "secondary-dim": "#a0004a",
+                        "secondary-fixed-dim": "#ffadc0",
+                        "on-secondary-fixed-variant": "#a1004b",
+                        "surface-bright": "#f5f6f7",
+                        "inverse-surface": "#0c0f10",
+                        "tertiary": "#006571",
+                        "outline-variant": "#abadae",
+                        "on-tertiary-fixed": "#003840",
+                        "primary-dim": "#5f4e00",
+                        "on-primary-fixed": "#433700",
+                        "surface-container-lowest": "#ffffff",
+                        "on-tertiary-fixed-variant": "#005762",
+                        "on-error": "#ffefec",
+                        "on-error-container": "#520c00",
+                        "error-container": "#f95630",
+                        "surface-tint": "#6d5a00",
+                        "secondary-container": "#ffc1ce",
+                        "secondary": "#b60055",
+                        "tertiary-container": "#00e3fd",
+                        "primary-fixed-dim": "#edc600",
+                        "error-dim": "#b92902",
+                        "on-surface": "#2c2f30",
+                        "surface-container-highest": "#dadddf",
+                        "primary": "#6d5a00",
+                        "on-primary-container": "#594a00",
+                        "primary-container": "#fdd400",
+                        "surface-dim": "#d1d5d7",
+                        "on-secondary-fixed": "#6d0030",
+                        "inverse-on-surface": "#9b9d9e",
+                        "outline": "#757778",
+                        "surface": "#f5f6f7",
+                        "primary-fixed": "#fdd400",
+                        "surface-container-high": "#e0e3e4",
+                        "inverse-primary": "#fdd400",
+                        "on-tertiary": "#d8f8ff",
+                        "surface-variant": "#dadddf",
+                        "background": "#f5f6f7",
+                        "surface-container": "#e6e8ea",
+                        "on-tertiary-container": "#004d57",
+                        "surface-container-low": "#eff1f2",
+                        "error": "#b02500"
+                    },
+                    fontFamily: {
+                        "headline": ["Spline Sans", "sans-serif"],
+                        "body": ["Plus Jakarta Sans", "sans-serif"],
+                        "label": ["Plus Jakarta Sans", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
   </head>
-  <body>
+  <body class="font-body bg-secondary-container text-on-background selection:bg-primary-container selection:text-on-primary-container">
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
