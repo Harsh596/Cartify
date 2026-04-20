@@ -29,3 +29,17 @@ Cartify is a modern, fully responsive e-commerce web application built entirely 
    ```bash
    git clone <your-repository-url>
    cd cartify
+   ```
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+
+3. **Available Command Scripts**
+   * `npm run dev` - Starts the Vite development server.
+   * `npm run build` - Bundles the application for production.
+   * `npm run lint` - Runs ESLint to evaluate code quality.
+   * `npm run preview` - Previews the production build locally.
+   * `npm run deploy` - Deploys the `dist` directory directly to GitHub Pages (runs `predeploy` first to build).
+   
+ 
